@@ -2,11 +2,11 @@ import pkg from 'pg';
 const { Pool } = pkg;
 
 const pooll = new Pool({
-    host: 'localhost',
+    host: 'dpg-cjkjj27v9s6c73cktob0-a',
     port: 5432,
-    database: 'testing',
-    user: 'postgres',
-    password: 'chidera442',
+    database: 'ivorydb',
+    user: 'ivorydb_user',
+    password: 'chide2XdnZmPirQAD2OUb3Yjdi0muSyDSSFXrra442',
     max: 20,
     idleTimeoutMillis: 30000,
     connectionTimeoutMillis: 2000,
