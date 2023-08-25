@@ -9,7 +9,7 @@ dotenv.config();
 
 const app = express();
 
-const port =  5000;
+const port =  4400;
 
 app.use(
   cors({
