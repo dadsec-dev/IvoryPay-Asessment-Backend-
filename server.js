@@ -13,7 +13,7 @@ const port =  4400;
 
 app.use(
   cors({
-    origin: "*",
+    origin: "https://statuesque-twilight-9eb35f.netlify.app/",
   })
 );
 
