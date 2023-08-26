@@ -13,7 +13,7 @@ const port =  4400;
 
 app.use(
   cors({
-    origin: "https://ivory-assesment-frontend-c218gs02e-dadsec-dev.vercel.app/",
+    origin: "https://ivory-assesment-frontend-c218gs02e-dadsec-dev.vercel.app",
   })
 );
 
