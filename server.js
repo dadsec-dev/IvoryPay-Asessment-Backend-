@@ -13,7 +13,7 @@ const port =  4400;
 
 app.use(
   cors({
-    origin: "https://statuesque-twilight-9eb35f.netlify.app",
+    origin: "https://ivory-assesment-frontend.vercel.app",
   })
 );
 
@@ -68,7 +68,7 @@ app.post("/invite", async (req, res) => {
     from: "odogwuOnitsha404@outlook.com",
     to: email,
     subject: "Invitation to Register on IvoryPay",
-    html: `<a href='http://localhost:3000/register/${token}'>Click here to register</a>`,
+    html: `<a href='https://ivory-assesment-frontend.vercel.app/${token}'>Click here to register</a>`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
@@ -160,7 +160,7 @@ app.post("/login", async (req, res) => {
 
 
 app.post("/register", async (req, res) => {
-  const { email, password, fullName, token, adminSecret } = req.body;  // Add adminSecret
+  const { email, password, fullName, token, adminSecret } = req.body; 
 
   console.log(`Received email: ${email}, token: ${token}`);
   console.log(`Admin secret == entered by user ${adminSecret}`)
@@ -184,7 +184,7 @@ app.post("/register", async (req, res) => {
       let role;
 
 
-      const ADMIN_SECRETi = process.env.ADMIN_SECRET;  // Use an environment variable for the admin secret code
+      const ADMIN_SECRETi = process.env.ADMIN_SECRET;  
       if (adminSecret == ADMIN_SECRETi) {
           role = "admin";
       } else {
@@ -249,7 +249,7 @@ app.post("/admin/invite-user", async (req, res) => {
       from: "odogwuOnitsha404@outlook.com",
       to: email,
       subject: "Invitation to Register on IvoryPay",
-      html: `<a href='http://localhost:3000/register/${token}'>Click here to register</a>`,
+      html: `<a href='https://ivory-assesment-frontend.vercel.app/register/${token}'>Click here to register</a>`,
     };
   
     transporter.sendMail(mailOptions, (error, info) => {
