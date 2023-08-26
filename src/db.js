@@ -6,7 +6,7 @@ const pooll = new Pool({
     port: 5432,
     database: 'ivorydb',
     user: 'ivorydb_user',
-    password: 'chide2XdnZmPirQAD2OUb3Yjdi0muSyDSSFXrra442',
+    password: '2XdnZmPirQAD2OUb3Yjdi0muSyDSSFXr',
     max: 20,
     idleTimeoutMillis: 30000,
     connectionTimeoutMillis: 2000,
