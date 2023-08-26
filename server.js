@@ -13,7 +13,7 @@ const port =  4400;
 
 app.use(
   cors({
-    origin: "https://ivory-assesment-frontend.vercel.app",
+    origin: "https://ivory-assesment-frontend-c218gs02e-dadsec-dev.vercel.app/",
   })
 );
 
@@ -68,7 +68,7 @@ app.post("/invite", async (req, res) => {
     from: "odogwuOnitsha404@outlook.com",
     to: email,
     subject: "Invitation to Register on IvoryPay",
-    html: `<a href='https://ivory-assesment-frontend.vercel.app/${token}'>Click here to register</a>`,
+    html: `<a href='https://ivory-assesment-frontend-c218gs02e-dadsec-dev.vercel.app/${token}'>Click here to register</a>`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
@@ -249,7 +249,7 @@ app.post("/admin/invite-user", async (req, res) => {
       from: "odogwuOnitsha404@outlook.com",
       to: email,
       subject: "Invitation to Register on IvoryPay",
-      html: `<a href='https://ivory-assesment-frontend.vercel.app/register/${token}'>Click here to register</a>`,
+      html: `<a href='https://ivory-assesment-frontend-c218gs02e-dadsec-dev.vercel.app/${token}'>Click here to register</a>`,
     };
   
     transporter.sendMail(mailOptions, (error, info) => {
